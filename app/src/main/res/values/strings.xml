@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">belajarRelative</string>
+    <string-array name="arrKepada">
+        <item>Aku</item>
+        <item>Saya</item>
+        <item>Watashi</item>
+        <item>Aing</item>
+    </string-array>
+</resources>

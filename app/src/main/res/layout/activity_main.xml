@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="34px"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_hal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hal : "
+        android:textSize="40px"
+        />
+    <TextView
+        android:id="@+id/tv_rahasia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rahasia"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/tv_hal"
+        android:textSize="40px"
+        />
+
+    <TextView
+        android:id="@+id/tv_tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palembang, 28 Sept. 2022"
+        android:layout_alignParentRight="true"
+        android:textSize="40px"
+        />
+
+    <TextView
+        android:id="@+id/tv_kepada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kepada : "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_hal"
+        android:layout_marginTop="40px"
+        />
+
+    <Spinner
+        android:id="@+id/sp_kepada_saha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_kepada"
+        android:entries="@array/arrKepada"
+        />
+
+    <Button
+        android:id="@+id/bt_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Click Here"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40px"
+        />
+
+<!-- Check Box -->
+    <CheckBox
+        android:id="@+id/cb_yakin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakin"
+        android:layout_below="@id/bt_click"
+        />
+    <CheckBox
+        android:id="@+id/cb_yakin_banget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakin Banget"
+        android:layout_below="@+id/bt_click"
+        android:layout_toRightOf="@id/cb_yakin"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:layout_below="@id/bt_click"
+        android:layout_toRightOf="@id/cb_yakin_banget"
+        />
+
+    <Button
+        android:id="@+id/btn_keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
